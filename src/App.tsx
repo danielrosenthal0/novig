@@ -270,19 +270,19 @@ function App() {
                 {gameMode ? (
                   <>
                     <h3 className="text-lg font-semibold text-emerald-900 dark:text-emerald-100">
-                      {gameVerdict.assessment}
+                      {gameVerdict!.assessment}
                     </h3>
                     <p className="mt-2 text-sm text-emerald-700 dark:text-emerald-300">
-                      {gameVerdict.details}
+                      {gameVerdict!.details}
                     </p>
                   </>
                 ) : (
                   <>
                     <h3 className="text-lg font-semibold text-emerald-900 dark:text-emerald-100">
-                      Recommendation: {verdict.recommendation}
+                      Recommendation: {verdict!.recommendation}
                     </h3>
                     <p className="mt-2 text-sm text-emerald-700 dark:text-emerald-300">
-                      {verdict.reason}
+                      {verdict!.reason}
                     </p>
                   </>
                 )}

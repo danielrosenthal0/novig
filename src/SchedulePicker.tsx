@@ -17,7 +17,7 @@ const weekdays = [
 
 
 //need to convert weekday and time to date for date handler
-export function getNextScheduledDate(day: string, time: string) {
+function getNextScheduledDate(day: string, time: string) {
   const [hours, minutes] = time.split(':').map(Number)
   const now = new Date()
   const target = new Date()

@@ -10,11 +10,11 @@ A Vite + TypeScript SPA that helps you decide whether you can host your event ou
 - **Styling:** Tailwind CSS
 
 ## Setup
-\`\`\`bash
+```bash
 npm install
 npm run dev
-\`\`\`
-> Add your API keys to a `.env` file — see `.env.example`
+```
+> Add API keys to a `.env` file for Visual Crossing and Geoapify
 
 ## Easter Egg
 🏀 Try enabling **Playoff Mode** to optimize for NBA playoff watch parties

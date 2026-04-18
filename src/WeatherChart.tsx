@@ -7,6 +7,7 @@ import {
   PointElement,
   Title,
   Tooltip,
+  type ChartOptions,
 } from 'chart.js'
 import { Line } from 'react-chartjs-2'
 
@@ -147,7 +148,7 @@ export default function WeatherChart({
     ],
   }
 
-  const options = {
+  const options: ChartOptions<'line'> = {
     responsive: true,
     maintainAspectRatio: false,
     interaction: {
@@ -163,7 +164,7 @@ export default function WeatherChart({
           padding: 20,
           font: {
             size: 12,
-            weight: '500',
+            weight: 500,
           },
         },
       },
@@ -172,7 +173,7 @@ export default function WeatherChart({
         text: title,
         font: {
           size: 16,
-          weight: '600',
+          weight: 600,
         },
         padding: {
           top: 10,
@@ -195,7 +196,6 @@ export default function WeatherChart({
         beginAtZero: false,
         grid: {
           color: 'rgba(0, 0, 0, 0.05)',
-          drawBorder: false,
         },
         ticks: {
           padding: 10,

@@ -37,7 +37,7 @@ function getNextScheduledDate(day: string, time: string) {
 
 
 export default function SchedulePicker({ dateHandler }: DateProps) {
-  const [selectedWeekday, setSelectedWeekday] = useState('Friday')
+  const [selectedWeekday, setSelectedWeekday] = useState('Saturday')
   const [selectedTime, setSelectedTime] = useState('14:30')
 
   return (
